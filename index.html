@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" info="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>이승찬_포트폴리오</title>
+
+  <!--css-->
+  <link rel="stylesheet" href="css/reset.css"></link>
+  <link rel="stylesheet" href="css/sal.css"></link>
+  <link rel="stylesheet" href="css/stars.css"></link>
+  <link rel="stylesheet" href="css/style.css"></link>
+  <link rel="stylesheet" href="css/menu.css"></link>
+
+  <!--js-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script><!--jquery-->
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!--top-->
+  <script type="text/javascript" src="js/jquery.DB_scrollMenu.min.js"></script>
+
+  <!--slide-->
+  <script type="text/javascript" src="js/jquery.DB_tabSlideStepBanner.min.js"></script>
+
+
+  <!--popup-->
+  <script language="JavaScript">
+    var imgObj = new Image();
+    function showImgWin(imgName) {
+      imgObj.src = imgName;
+      setTimeout("createImgWin(imgObj)", 100);
+    }
+
+   function createImgWin(imgObj) {
+      if (! imgObj.complete) {
+        setTimeout("createImgWin(imgObj)", 100);
+        return;
+      }
+      imageWin = window.open("", "imageWin",
+        "width=" + imgObj.width + ",height=" + imgObj.height);
+      imageWin.document.write("<html><body style='margin:0'>");
+      imageWin.document.write("<a href=javascript:window.close()><img src='" + imgObj.src + "' border=0></a>");
+      imageWin.document.write("</body><html>");
+      imageWin.document.title = imgObj.src;
+    }
+    </script>
+
+
+</head>
+
+
+
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+
+    
+       <!--svg-->
+       <svg class="hidden">
+        <symbol id="icon-menu" viewBox="252.826 192.477 41.384 44.316"  >
+            <title>menu</title>
+            <defs>
+            <path d="M272.35 198.37v-4.89 M267.14 199.08l-3.12-3.15 M277.9 199.08l3.12-3.15 M276.11 229.5c-2.22-2.72-7.38-8.72-15.47-17.99.45-.59 2.66-3.52 6.65-8.79h17.11l6.81 8.79-15.1 17.99-3.59 4.29-18.69-22.28 6.81-8.79h6.65" fill-opacity="0" stroke="#fff" stroke-width="2" id="g"/>
+        </defs>
+            <use xlink:href="#g" fill-opacity="0"class="v5"/>
+        
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <title>close</title>
+            <path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" stroke-width="1" />
+        </symbol>
+</svg>
+
+
+<main>
+        <nav class="menu">
+            <div class="menu__item menu__item--1" data-direction="bt">
+                <div class="menu__item-inner">
+                    <div class="mainmenu">
+                        <a href="hollys/index.html" target="_blank" class="mainmenu__item" onMouseOver='this.innerHTML="Web Renewal Design"' onMouseOut='this.innerHTML="웹 리뉴얼디자인"'>웹 리뉴얼디자인</a>
+                        <a href="#portbox1" class="mainmenu__item" onMouseOver='this.innerHTML="Web Portfolio"' onMouseOut='this.innerHTML="Web Portfolio"'>
+                            Web Portfolio</a>
+                            <!-- <a href="#portbox3" class="mainmenu__item" onMouseOver='this.innerHTML="프로젝트 모음"' onMouseOut='this.innerHTML="2017~2019년 프로젝트"'>2017~19년 프로젝트</a> -->
+                        <a href="#portbox2" class="mainmenu__item" onMouseOver='this.innerHTML="Design Portfolio"' onMouseOut='this.innerHTML="Design Portfolio"'>Design Portfolio</a>
+                    </div> 
+                    <p class="label label--topleft label--vert-mirror">2021 UIUX Portfolio</p>
+                    <p class="label label--bottomright label--vert">Web planner Lee seung chan</p>
+                </div>
+            </div>
+  
+            <!--button-->
+            <button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu" ></use></svg></button>
+            <button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
+        </nav>     
+</main>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js'></script>
+<script  src="js/index.js"></script>
+<!--top-->
+<div id="DB_etc38">
+    <div class="btn">
+          <a href="#main" class="up"></a>
+    </div>
+</div> 
+<script>
+    $('#DB_etc38').DB_scrollMenu({
+          key:'c65806',
+          speed:500,
+          viewHeight:100
+      })
+</script>
+<!-- main -->
+<div id="main">    
+    <div class="container01">
+      <!--<h1><a href="index.html"><img src="img/logo.png" alt="이선옥_포트폴리오"></a></h1>-->
+       <!--<span><img src="img/menu.png" alt="sitemap"></span>-->
+        <div class="text1" data-sal="slide-left" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800"><img src="img/web_publisher.png" alt="Designer
+            LEE SEON OK
+            숨은 '보석' 같은 디자이너
+            시행착오를 딛고 더욱 단단해졌습니다.
+            오늘보다 내일 더 빛나는 웹 기획자가 되겠습니다.
+            "></div>
+            
+            <div class="scrolldown"></div>
+            <div class='stars'></div>
+            <div class='stars2'></div>
+            <div class='stars3'></div>
+    </div>      
+</div>
+    
+
+
+
+
+<!-- portfolio 1 -->
+<div id="portbox1">
+    <div class="wrap1">
+		  <div class="text2" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800"><img src="img/text02_.png" alt="Portfolio 1
+            새로움으로 반짝이는 디자인"></div>
+      <!-- <div class="text2_bg"><img src="img/text2_bg_.png" alt="2019"></div> -->
+      <div class="spacle1"><img src="img/spacle1_bg.png" alt=""></div>  
+      <div class="pbox1">
+    <div class="left"  data-sal-duration="1200"
+                data-sal="slide-up"
+                data-sal-delay="300"
+                data-sal-easing="ease-out-bounce">
+        <span class="subtext1"><img src="img/img_text1_1.png" alt="01 WEB RENEWAL"></span>
+        <a href="hollys/index.html" target="_blank"><img src="img/77757_51323_5620.jpg" onmouseover="this.src='img/77757_51323_5620_on.jpg'"onmouseout="this.src='img/77757_51323_5620.jpg'" alt="할리스"/></a>
+        <!-- <span class="bt01"><a href="http://hongsi.x-y.net/2019_ui16/lso_m/" target="_blank"><img src="img/bt01.jpg" onmouseover="this.src='img/bt01_on.jpg'"onmouseout="this.src='img/bt01.jpg'" alt="design view"></a></span>
+        <span class="bt02"><a href="http://hongsi.x-y.net/2019_ui16/lso_c/m_process" target="_blank"><img src="img/bt02.jpg" onmouseover="this.src='img/bt02_on.jpg'"onmouseout="this.src='img/bt02.jpg'" alt="process view"/></a></span> -->
+      </div>
+
+        <div class="center" data-sal-duration='1200'
+                data-sal="slide-up"
+                data-sal-delay='600'
+                data-sal-easing="ease-out-bounce">
+        <span class="subtext2"><img src="img/img_text1_2.png" alt="02 WEB RENEWAL"></span>        
+        <a href="iphone13/index.html" target="_blank"><img src="img/145044_139836_351.jpg" onmouseover="this.src='img/145044_139836_351_on.jpg'"onmouseout="this.src='img/145044_139836_351.jpg'" alt="아이폰13"/></a>
+        <!-- <span class="bt01"><a href="hollys/index.html" target="_blank"><img src="img/bt01.jpg" onmouseover="this.src='img/bt01_on.jpg'"onmouseout="this.src='img/bt01.jpg'" alt="design view"></a></span>
+        <span class="bt02"><a href="http://hongsi.x-y.net/2019_ui16/lso_c/w_process" target="_blank"><img src="img/bt02.jpg" onmouseover="this.src='img/bt02_on.jpg'"onmouseout="this.src='img/bt02.jpg'" alt="process view"/></a></span> -->
+        </div>
+
+ 
+        <div class="right"  data-sal-duration="1200"
+                data-sal="slide-up"
+                data-sal-delay="900"
+                data-sal-easing="ease-out-bounce">
+        <span class="subtext3"><img src="img/img_text1_3.png" alt="03 WEB RENEWAL"></span>
+        <a href="hite_jinro/index.html" target="_blank"><img src="img/SSI_20210202150614.jpg" onmouseover="this.src='img/SSI_20210202150614_on.jpg'"onmouseout="this.src='img/SSI_20210202150614.jpg'" alt="참이슬"/></a>
+        <!-- <span class="bt01"><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_e" target="_blank"><img src="img/bt01.jpg" onmouseover="this.src='img/bt01_on.jpg'"onmouseout="this.src='img/bt01.jpg'" alt="design view"></a></span>
+        <span class="bt02"><a href="http://hongsi.x-y.net/2019_ui16/lso_c/e_process" target="_blank"><img src="img/bt02.jpg" onmouseover="this.src='img/bt02_on.jpg'"onmouseout="this.src='img/bt02.jpg'" alt="process view"/></a></span> -->
+        </div>
+
+     </div>
+
+     
+    </div>
+</div>
+
+
+<!--portfolio 3 -->
+<!-- <div id="portbox3">
+    <div class="wrap3">
+             <div class="text4" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800"><img src="img/text03_.png" alt="Portfolio4 다양한 빛깔로 물든 디자인"></div>
+            <div class="text4_bg"><img src="img/text4_bg.png" alt=""></div>
+
+        
+            <div id="DB_tab41">
+                    <div class="mask">
+                        <ul class="img">
+
+                                <li><a href= "javascript:showImgWin('img/p3_1.jpg')">
+                                    <img src="img/img3_1.jpg" alt="01 블랙야크 포스터 디자인"/ >
+                            </a></li>
+
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_body" target="_blank"><img src="img/img3_2.jpg" alt="02 바디프랜드 이벤트 디자인"/></a></li>
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_bmw" target="_blank"><img src="img/img3_3.jpg" alt="03 bmw 웹
+                                사이트 리뉴얼 디자인"/></a></li>
+                                <li><a href= "javascript:showImgWin('img/p3_4.jpg')"><img src="img/img3_4.jpg" alt="04 요요쉬 이벤트 디자인" ></a></li>
+                               
+                         
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_ddrane" target="_blank"><img src="img/img3_55.jpg" alt="05 뜨라네 웹사이트 리뉴얼 디자인"/></a></li>
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_good" target="_blank"><img src="img/img3_6.jpg" alt="07 좋은기업컨설팅 랜딩페이지 디자인"/></a></li>
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_isol" target="_blank"><img src="img/img3_7.jpg" alt="08 이솔화장품 웹사이트 리뉴얼 디자인"/></a></li>
+                                <li><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_cin" target="_blank"><img src="img/img3_8.jpg" alt="09 청인투자지원단 랜딩페이지 디자인"/></a></li>
+                        </ul>
+                    </div>
+                    <span class="prev"><img src="img/arrow1.png" alt="왼쪽 버튼"/></span>
+                    <span class="next"><img src="img/arrow2.png" alt="오른쪽 버튼"/></span>
+
+                
+
+                    <ul class="btn"></ul>
+                </div>
+
+                
+               
+                <script>
+                    $('#DB_tab41').DB_tabSlideStepBanner({
+                        key:'c65806',
+                        moveSpeed:700,              
+                        autoRollingTime:5000,            
+                        limitNum:4,                  
+                        moveNum:4                   
+                    })
+                </script>
+
+      </div>      
+    </div>    -->
+
+
+
+
+    
+
+<!-- portfolio 2 -->
+<div id="portbox2">
+    <div class="wrap2">
+          <div class="text3" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800"><img src="img/text01.png" alt="Portfolio 2 시행착오를 딛고 단단해진 디자인"></div>
+      <!--<div class="text3_bg"><img src="img/text3_bg.png" alt=""></div>-->
+
+        <div class="pbox2">
+           <ul class="box2_1">
+               <li class="b2_1" data-sal-duration="1200"
+               data-sal="slide-down"
+               data-sal-delay="300"
+               data-sal-easing="ease-out-bounce"><a href="http://moneytipsasset.com" target="_blank"><img src="img/Retro_Comic_Book3.png" onmouseover="this.src='img/Retro_Comic_Book3_on.png'"onmouseout="this.src='img/Retro_Comic_Book3.png'" alt="레트로 코믹북"/></a></li>
+           </ul>
+           <ul class="box2_2" >
+               <li class="b2_2" data-sal-duration='1200'
+               data-sal="slide-down"
+               data-sal-delay='600'
+               data-sal-easing="ease-out-bounce"><a href="#" target="_blank"><img src="img/DELEALI.png" onmouseover="this.src='img/DELEALI_on.png'"onmouseout="this.src='img/DELEALI.png'" alt="DELEALI"/></a></li>
+           </ul>
+           <ul class="box2_3">
+               <li class="b2_3" data-sal-duration="1200"
+               data-sal="slide-down"
+               data-sal-delay="900"
+               data-sal-easing="ease-out-bounce"><a href="http://goodbizsun.com" target="_blank"><img src="img/car_drawing4.png" onmouseover="this.src='img/car_drawing4_on.png'"onmouseout="this.src='img/car_drawing4.png'" alt="차 드로우잉"/></a></li>
+           </ul>
+        </div>
+
+        <div class="pbox3">
+            <!-- <ul class="box2_4">
+                <li class="b2_4" data-sal-duration="1200"
+                data-sal="slide-down"
+                data-sal-delay="300"
+                data-sal-easing="ease-out-bounce"><a href="http://moneytips.mtafp.co.kr/main.php" target="_blank"><img src="img/img2_4.jpg" onmouseover="this.src='img/img2_4_on.jpg'"onmouseout="this.src='img/img2_4.jpg'" alt="04 머니팁스 재무센터"/></a></li>
+            </ul>  
+            <ul class="box2_5">
+                <li class="b2_5" data-sal-duration='1200'
+                data-sal="slide-down"
+                data-sal-delay='600'
+                data-sal-easing="ease-out-bounce"><a href="http://insutips.mtafp.co.kr/main.php" target="_blank"><img src="img/img2_5.jpg" onmouseover="this.src='img/img2_5_on.jpg'"onmouseout="this.src='img/img2_5.jpg'" alt="05 머니팁스 보험센터"/></a></li>
+            </ul>
+            <ul class="box2_6">
+                <li class="b2_6" data-sal-duration='1200'
+                data-sal="slide-down"
+                data-sal-delay='900'
+                data-sal-easing="ease-out-bounce"><a href="http://hongsi.x-y.net/2019_ui16/lso_c/lso_bri" target="_blank"><img src="img/img2_6.jpg" onmouseover="this.src='img/img2_6_on.jpg'"onmouseout="this.src='img/img2_6.jpg'" alt="06 브리펀딩"/></a></li>
+            </ul> -->
+        </div>
+    </div>
+</div>    
+
+
+
+<!-- portfolio 4 -->
+<div id="portbox4">
+    <div class="wrap4">
+          <div class="text5" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="800">
+            <img src="img/text5_1.png" alt="Epilogue 오늘보다 내일 더 빛나는 디자이너">
+          </div>
+          <!-- <div class="text5_bg"><img src="img/text5_bg_.png" alt=""></div> -->
+
+    <div class="pbox5">
+      <div class="img4">
+          <a href="#"><img src="img/p111425.png"alt="#"/></a>
+      </div>
+    </div>
+
+     <div class="spacle"><img src="img/spacle5_bg.png"alt="#"/></div>
+    </div>
+</div>               
+
+
+
+<!-- footer -->
+<div id="footer">
+    <div class="wrap5">
+         <span><img src="img/copy.png" alt="Copyright © 2019 Lee Seon Ok. All Rights Reserved."></span>   
+    </div>
+</div>
+
+
+
+<script src="js/sal.js"></script>
+<script>sal({
+
+  once: false
+});</script>
+
+
+
+</div>
+</body>
+</html>
